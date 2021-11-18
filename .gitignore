@@ -1,0 +1,9 @@
+#
+# Create to ignore generated file from using Gabby that needs to be save on local
+#
+
+
+# Gabby
+.play*
+
+# Is this all I need to write gitignore? cool

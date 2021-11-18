@@ -1,0 +1,8 @@
+for i in {1..4}; do
+# from 1 to 4
+  echo $i
+done
+for j in {100..200}; do
+# from 100 to 200
+  echo $j
+done 

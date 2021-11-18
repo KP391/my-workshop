@@ -1,2 +1,2 @@
-# my-workshop
-just random shell script
+# myworkshop
+random bash scripts 
