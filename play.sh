@@ -8,7 +8,8 @@
 # >> ctrl+c will come back to menu   , only 4th option will leave the program / or type exit (I think I can use trap here)
 # >> Add better visual, maybe ASCII art, but I'm not good at that either.
 # >> 3rd option will be list of random dialog that will be read randomly by Gabby.
-# 
+#
+# Current status : Not working
 
 # General information
 version="0.0.1"
