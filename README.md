@@ -1,2 +1,3 @@
-# myworkshop
-random bash scripts 
+### My Workshop
+I mean... more like a 'playground' but yea... 
+
