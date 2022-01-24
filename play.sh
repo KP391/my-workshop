@@ -151,14 +151,14 @@ function LIST_GAME {
   fi
 }
 
-function exit.arg {
+function EXIT_ARGS {
   clear
   echo -e "\n $GABBY: Okay, see you later!"
 }
 
 # main
 
-trap exit.arg EXIT
+trap EXIT_ARGS EXIT
 while true; do
   greet
   option
