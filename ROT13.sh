@@ -1,3 +1,4 @@
+#!/bin/bash
 function encrypt() {
 
 # Map  upper case A-Z to N-ZA-M and lover case a-z to n-za-m

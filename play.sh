@@ -152,7 +152,7 @@ function LIST_GAME {
 }
 
 function EXIT_ARGS {
-  clear
+  #clear
   echo -e "\n $GABBY: Okay, see you later!"
 }
 
