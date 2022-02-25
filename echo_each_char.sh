@@ -37,8 +37,13 @@ function main() {
 }
 #printer $var
 # Main
-main
-
+text="$@"
+if[ "$@" -z ] {
+  then
+  main
+} else {
+  printer $@
+}
 
 
 # Explaination from @chepner in https://stackoverflow.com/questions/10551981/how-to-perform-a-for-loop-on-each-character-in-a-string-in-bash

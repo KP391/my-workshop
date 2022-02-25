@@ -57,23 +57,6 @@ dotsleep () {
   echo -e "\n"
 }
 
-#
-#
-# Printer function
-function printer() {
-  var="$@"
-  for (( i=0; i<${#var}; i++ )); do
-    if [ $i -eq $((${#var}-1)) ]; then
-      echo -e "${var:$i:1}${NC}"
-      sleep 0.5
-    else
-    echo -ne "${var:$i:1}${NC}"
-    # ${#foo} expands to the length of foo. ${foo:$i:1} expands to the substring starting at position $i of length 1
-    sleep 0.5
-    fi
-  done
-}
-
 
 #
 #
@@ -85,18 +68,16 @@ function greet {
   if [ "$X_COUNT" -gt '4' ]; then
     G_COUNT='4'
   fi
-  #g1="$GABBY : ${GREET[G_COUNT]}"
   echo -e "\n $GABBY : ${GREET[G_COUNT]}\n"
-  printer $g1
   if [ "$X_COUNT" -eq '10' ]; then
     echo -e " $GABBY : Why are you still here? lol\n"
   fi
 }
 
-function confirmation { # If confirmation function failed. there is a chance that your BASH version so too old.
+function confirmation { # If function results in an error, it maybe because your BASH version is old
   echo -ne "> confirm? (y/n)\n: "
   read -t 3000 CONFIRM
-  if  [[ ${CONFIRM,,} == *'y'* ]] && [[ ${CONFIRM,,} == *'n'* ]]; then # Try changing ${CONFIRM,,}
+  if  [[ ${CONFIRM,,} == *'y'* ]] && [[ ${CONFIRM,,} == *'n'* ]]; then
     echo -e "\n $GABBY : Jesus christ... choose one. Please.\n"
     confirmation
   elif [ -z ${CONFIRM,,} ] || [[ ${CONFIRM,,} == *'y'* ]]; then
@@ -171,7 +152,7 @@ function LIST_GAME {
 }
 
 function EXIT_ARGS {
-  clear
+  #clear
   echo -e "\n $GABBY: Okay, see you later!"
 }
 
@@ -182,3 +163,4 @@ while true; do
   greet
   option
 done
+
