@@ -74,7 +74,7 @@ function greet {
   fi
 }
 
-function confirmation {
+function confirmation { # If function results in an error, it maybe because your BASH version is old
   echo -ne "> confirm? (y/n)\n: "
   read -t 3000 CONFIRM
   if  [[ ${CONFIRM,,} == *'y'* ]] && [[ ${CONFIRM,,} == *'n'* ]]; then
@@ -163,3 +163,4 @@ while true; do
   greet
   option
 done
+
