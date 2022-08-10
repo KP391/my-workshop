@@ -17,10 +17,10 @@ function printer() {
     if [ $i -eq $((${#var}-1)) ]; then
       echo -e "${var:$i:1}${NC}"
       sleep 0.5
+      # ${#foo} expands to the length of foo. ${foo:$i:1} expands to the substring starting at position $i of length 1
     else
-    echo -ne "${var:$i:1}${NC}"
-    # ${#foo} expands to the length of foo. ${foo:$i:1} expands to the substring starting at position $i of length 1
-    sleep 0.5
+      echo -ne "${var:$i:1}${NC}"
+      sleep 0.5
     fi
   done
 }
@@ -38,12 +38,11 @@ function main() {
 #printer $var
 # Main
 text="$@"
-if[ "$@" -z ] {
-  then
+if [[ -z "$text" ]]; then
   main
-} else {
+else
   printer $@
-}
+fi
 
 
 # Explaination from @chepner in https://stackoverflow.com/questions/10551981/how-to-perform-a-for-loop-on-each-character-in-a-string-in-bash
