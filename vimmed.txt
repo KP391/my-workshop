@@ -1,0 +1,7 @@
+Insert new line with "I"
+
+Append with "A"
+
+
+-> append here
+-> insert here > on the mooooon theeere 

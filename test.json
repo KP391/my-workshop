@@ -1,0 +1,12 @@
+{
+  "game": [
+    {
+      "name": "test",
+      "desc": "test game for jq"
+    },
+    {
+      "name": "test2",
+      "desc": "test game 2 for jq"
+    }
+  ]
+}
