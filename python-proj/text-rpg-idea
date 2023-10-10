@@ -1,0 +1,42 @@
+First of all,
+it should start with a prologe, an introduction.
+This application will run until exit command or interrupt key was pressed/used.
+The list of available commands will be below
+- show stats (of the player)
+- show equipments
+- show inventory
+  - equip items / use items
+  - discard items
+  - inspect item(s)
+- proceed map (randomize event?)
+- save & exit
+
+Array list
+
+Equipment
+- Weapon
+- Armour
+- Accessory
+
+Weapon
+- Shortsword
+- Spear
+- Handaxe
+
+Armour
+- Leather Armor
+- Iron Chestplate
+
+Items
+- Equipment
+- Consumable
+- Key Items
+
+Consumable
+- Potion
+- Herb
+- Antidote
+
+Key Items
+- Tower Key
+- A Letter
